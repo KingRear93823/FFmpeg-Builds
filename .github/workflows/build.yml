@@ -13,7 +13,7 @@ on:
         default: false
         required: false
       buildOnly:
-        description: 'Only build ffmpeg'
+        description: 'Only build FFmpeg'
         type: boolean
         default: false
         required: false
