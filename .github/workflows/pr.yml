@@ -18,20 +18,20 @@ jobs:
       fail-fast: false
       matrix:
         target: [win64,linux64]
-        variant: [nonfree,nonfree-shared 7.0]
+        variant: [gpl 7.1,gpl-shared 7.1]
         quickbuild: [1]
         include:
           - target: win64
-            variant: nonfree 7.0
+            variant: gpl 7.1
             quickbuild: ''
           - target: win64
-            variant: nonfree-shared 7.0
+            variant: gpl-shared 7.1
             quickbuild: ''
           - target: linux64
-            variant: nonfree
+            variant: gpl 7.1
             quickbuild: ''
           - target: linux64
-            variant: nonfree-shared 7.0
+            variant: gpl-shared 7.1
             quickbuild: ''
     steps:
       - name: Free Disk-Space
