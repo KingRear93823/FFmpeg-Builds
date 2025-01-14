@@ -149,7 +149,7 @@ jobs:
       fail-fast: false
       matrix:
         target: [win64,linux64]
-        variant: [nonfree,nonfree-shared 7.0]
+        variant: [gpl,gpl-shared 7.1]
     steps:
       - name: Free Disk-Space
         run: df -h && sudo apt-get clean && docker system prune -a -f && sudo rm -rf /usr/local/lib/android /usr/share/dotnet /opt/ghc && df -h
@@ -214,7 +214,7 @@ jobs:
       fail-fast: false
       matrix:
         target: [win64,linux64]
-        variant: [nonfree,nonfree-shared 7.0]
+        variant: [gpl,gpl-shared 7.1]
     steps:
       - name: Free Disk-Space
         run: df -h && sudo apt-get clean && docker system prune -a -f && sudo rm -rf /usr/local/lib/android /usr/share/dotnet /opt/ghc && df -h
